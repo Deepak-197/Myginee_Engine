@@ -7,6 +7,7 @@ export const Navbar = () => {
     <div className='nav'>
       <div className='navbar'>
           {/* <h1>Navbar</h1> */}
+          
           <div className='navbar_logo'>
               <img src={gineelogo} alt="ginee" width="200px" height="40px" />
           </div>
