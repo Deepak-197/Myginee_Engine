@@ -1,0 +1,63 @@
+.Header {
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 50px;
+    background-color: #be1516;
+    display: flex;
+    justify-content: space-around;
+    margin:auto;
+}
+
+.header1>p{
+    color: white;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+#nav-up-right {
+    /* border: 1px solid black; */
+     width: 15%;
+}
+#nav-settings {
+    /* border: 1px solid orangered; */
+    height: 50%;
+    /* width: 90%; */
+    /* margin-left: 2%; */
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+#save-app {
+    width: 80%;
+    position: relative;
+    display: inline-block;
+}
+#save-app img {
+    width: 45px;
+    height: 50px;
+    margin-top: 28px;
+}
+
+/* #nav-settings>div {
+    margin-left: 5%;
+} */
+#nav-settings p {
+    font-size: 14px;
+    color: gray;
+    
+    cursor: pointer;
+
+}
+.dropdown {
+    display: none;
+    position: absolute;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;  
+    background-color: white;
+}
+#save-App {
+    width: 270px;
+    height: 240px;
+}
+#save-app:hover .dropdown {
+    display: block;
+}

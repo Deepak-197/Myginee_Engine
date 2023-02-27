@@ -1,0 +1,58 @@
+.photocategory{
+    width: 100%;
+    padding: 10px;
+    /* border: 1px solid salmon; */
+}
+
+.category_name{
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.AllCategoryItem{
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    /* border: 1px solid blue; */
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, max-content));
+    grid-template-rows:  repeat(auto-fill) ; 
+    gap:30px;
+}
+
+.AllCategoryItem>div{
+    /* margin: auto; */
+
+    padding: 10px;
+    /* border: 1px solid red; */
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.AllCategoryItem>div:hover{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+
+.AllCategoryItem>div>button{
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    background-color: #be1615;
+    border-radius: 8px;
+    color: white;
+    
+}
+
+.AllCategoryItem>div>button>Link{
+    text-decoration: none;
+}
+.AllCategoryItem>div>button:hover{
+    color: black;
+    background-color: brown;
+   
+}

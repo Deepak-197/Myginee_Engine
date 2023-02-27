@@ -1,0 +1,46 @@
+.serviceslide{
+    margin-top: 5px;
+    padding: 5px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+  
+}
+
+.slidecate{
+    width: 85%;
+    
+}
+
+.singleSlideService{
+   
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    /* border: 1px solid sandybrown; */
+    margin-left: 10px;
+    /* height: 500px; */
+    padding: 10px;
+}
+
+.singleSlideService:hover {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+
+.singleSlideService>p{
+    font-size: 14px;
+    color: black;
+}
+
+.singleSlideService>button{
+    background-color: #be1615;
+    color: white;
+    font-weight: bolder;
+    height: 40px;
+    width: 150px;
+    border: none;
+    border-radius: 50px;
+}
+

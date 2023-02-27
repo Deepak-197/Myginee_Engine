@@ -1,0 +1,12 @@
+// get photography data
+export const GET_PHOTOGRAPHY_REQUEST = "GET_PHOTOGRAPHY_REQUEST"; 
+export const GET_PHOTOGRAPHY_SUCCESS = "GET_PHOTOGRAPHY_SUCCESS"; 
+export const GET_PHOTOGRAPHY_ERROR = "GET_PHOTOGRAPHY_ERROR"; 
+
+// data inside photography inside Birthday shoot
+export const GET_BIRTHDAY_REQUEST = "GET_BIRTHDAY_REQUEST";
+export const GET_BIRTHDAY_SUCCESS = "GET_BIRTHDAY_SUCCESS";
+export const GET_BIRTHDAY_ERROR = "GET_BIRTHDAY_ERROR";
+
+
+

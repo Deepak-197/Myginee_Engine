@@ -1,0 +1,40 @@
+.services{
+    width: 100%;
+    margin-top: 5px;
+    /* border: 1px solid blue; */
+    background-color: white;
+    font-size: larger;
+    /* font: italic small-caps bold 16px/2 cursive; */
+}
+
+.services_child{
+    /* width: 85%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, max-content));
+    grid-template-rows:  repeat(auto-fill) ; 
+    gap: 20px;
+    padding: 40px; */
+    display: flex;
+    justify-content: center;
+   
+    padding: 28px;
+    width: 90%;
+    border-radius: 12px;
+    margin-top: 3px;
+    background: #fff0;
+    box-shadow: none;
+    flex-wrap: wrap;
+   
+    /* border: 1px solid salmon; */
+    margin: auto;
+    overflow: hidden;
+}
+
+.services_child>div{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.services_child>div:hover{
+    background-color: rgb(240, 240, 240);
+}

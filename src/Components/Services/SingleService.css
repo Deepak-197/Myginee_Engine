@@ -1,0 +1,29 @@
+.single_service{
+    width: 180px;
+    /* border: 1px solid red; */
+    padding: 10px;
+    margin: 10px 10px 5px 5px;
+    border-radius: 10px;
+    background-color: white;
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; */
+    cursor: pointer;
+}
+
+
+
+.single_service > img{
+    /* border: 1px solid blue; */
+    width: 40%;
+    border-radius: 10px;
+   
+}
+
+
+
+
+.single_service > div > p{
+    font-size: 14px;
+    margin-top: 10px;
+    font-weight: bold;
+}

@@ -1,0 +1,90 @@
+.detailpage{
+    background-color: white;
+    /* border: 1px solid red; */
+    padding: 20px;
+    text-align: left;
+    
+}
+
+.service_des{
+    font-weight: bold;
+}
+
+.description{
+    width:45%; 
+    font-weight:bold; 
+    color:gray; 
+    font-size:13px;
+}
+
+.button{
+    width: 20%;
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.button>button{
+    border: none;
+    width: 120px;
+    height: 30px;
+    border-radius: 50px;
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+    background-color: #be1615;
+
+}
+.button>button:hover{
+    border: 2px solid #be1615;
+   color: #be1615;
+   background-color: rgb(243, 243, 243);
+}
+
+/* varient price category */
+.varient-price{
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    
+}
+.varient-price>div{
+    /* border: 1px solid blue; */
+    margin: 10px 0px 10px 10px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+
+.varient-price>div>p{
+    font-weight: bold;
+    
+}
+
+.varient-price>div>div{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 5px;
+}
+
+.varient-price>div>div>button{
+    border: none;
+    width: 100px;
+    height: 30px;
+    margin-left: 5px;
+    border-radius: 50px;
+    color: white;
+    font-weight: bold;
+    font-size: 10px;
+    background-color: #be1615;
+}
+
+.varient-price>div>div>button:hover{
+    border: 2px solid #be1615;
+    color: #be1615;
+    font-weight: bold;
+    background-color: rgb(243, 243, 243);
+}
