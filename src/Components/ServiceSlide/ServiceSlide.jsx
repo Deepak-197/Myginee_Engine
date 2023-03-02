@@ -88,7 +88,9 @@ export const ServiceSlide = () => {
                 return (
                     <div className='singleSlideService' key={item.id}>
                     <p style={{fontWeight:"bold"}}>{item.title}</p>
+                    <div className='product-image'>
                         <img src={item.image} alt=''/>
+                    </div>
                         {/* <p>⭐ 4.1 (11k)</p>
                         <p style={{width:"70%"}}>🛄 241 Bookings this month in Bhopal</p>
                         <h5>₹{item.value}/per square feet</h5> */}

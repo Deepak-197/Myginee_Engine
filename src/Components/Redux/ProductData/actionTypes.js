@@ -1,7 +1,19 @@
+// data inside category
+export const GET_SERVICE_REQUEST = "GET_SERVICE_REQUEST";
+export const GET_SERVICE_SUCCESS = "GET_SERVICE_SUCCESS";
+export const GET_SERVICE_ERROR = "GET_SERVICE_ERROR";
+
+// data inside category
+export const GET_SERVICE_DATA_REQUEST = "GET_SERVICE_DATA_REQUEST"; 
+export const GET_SERVICE_DATA_SUCCESS = "GET_SERVICE_DATA_SUCCESS"; 
+export const GET_SERVICE_DATA_ERROR = "GET_SERVICE_DATA_ERROR";
+
 // get photography data
 export const GET_PHOTOGRAPHY_REQUEST = "GET_PHOTOGRAPHY_REQUEST"; 
 export const GET_PHOTOGRAPHY_SUCCESS = "GET_PHOTOGRAPHY_SUCCESS"; 
 export const GET_PHOTOGRAPHY_ERROR = "GET_PHOTOGRAPHY_ERROR"; 
+
+
 
 // data inside photography inside Birthday shoot
 export const GET_BIRTHDAY_REQUEST = "GET_BIRTHDAY_REQUEST";

@@ -44,7 +44,9 @@ export const DetailedItem = () => {
                   detail.length>0 && detail.map((el) => {
                   return (
                     <div key={el.id}>
+                     <div className='product-detail-image'>
                       <img src={el.image} width={200} height={200} />
+                     </div>
                       <h4>{el.title}</h4>
                       <span className='service_des'>Service Description:</span>
                       <p className='description'  dangerouslySetInnerHTML={{__html: el.details}}></p>
@@ -59,7 +61,9 @@ export const DetailedItem = () => {
                       return (
                           <div key={price.id}>
                             <div style={{display:"flex"}}> 
+                             <div className='product-inner-image'>
                              <img width={100} height={80} padding="20px" margin="0px 5px 0px 0px" src="https://media.myginee.com/media/service/items/images/images__8_-removebg-preview.png" />
+                             </div>  
                                 <div style={{marginLeft:"5px"}}>
                                 <p>{price.statement}</p>
                                 <h6>₹ {price.price}</h6>

@@ -1,20 +1,23 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import "./Services.css";
-import axios from 'axios';
 import { SingleService } from './SingleService';
+import { useDispatch, useSelector } from 'react-redux';
+import { getServices } from '../Redux/ProductData/action';
 
-const getServices = () => {
-   return axios.get("https://apis.myginee.com/v1/service/bhopal")
+// const getServices = () => {
+//    return axios.get("https://apis.myginee.com/v1/service/bhopal")
     
-}
+// }
 export const Services = () => {
-      const [services, setServices] = useState([])
+      // const [services, setServices] = useState([])
+      const dispatch = useDispatch()
+      const services = useSelector((store) => store.AppReducer.services)
 
       useEffect(() => {
-        getServices()
-        .then((res)=> setServices(res.data))
-        .catch((err) => console.log("Error", err))
-      }, [])
+        if(services.length === 0){
+          dispatch(getServices())
+        }
+      }, [dispatch, services])
 
       console.log("Services data", services)
 

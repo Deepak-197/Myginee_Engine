@@ -1,23 +1,26 @@
-import React, { useEffect} from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import React from 'react';
+import "./ServiceData.css";
+import { useEffect } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
+import { getServiceData } from '../Redux/ProductData/action'
+import { useParams } from 'react-router';
 import { Link } from 'react-router-dom';
-import { getPhotography } from '../../Redux/ProductData/action';
-import "./ViewAllitem.css";
 
-export const ViewAllitem = () => {
-    const dispatch = useDispatch()
-    const photo = useSelector((store) => store.AppReducer.photography)
-    
+export const ServiceData = () => {
+  const {id} = useParams()
+  const {title} = useParams()
+  console.log("id:", id)
+  console.log("title:", title)
+  const dispatch = useDispatch()
+  const serviceData = useSelector((store) => store.AppReducer.serviceData)
+  
+     useEffect(() => {
+       if(serviceData.length === 0){
+        dispatch(getServiceData(id))
+       } 
+     }, [dispatch, serviceData.length])
 
-
-    useEffect(() => {
-        if(photo.length === 0){
-          dispatch(getPhotography())
-        }
-    }, [dispatch, photo.length])
-
-    console.log(photo)
-
+      console.log(serviceData)
   return (
     <div className='photocategory'>
         <h3 className='category_name'>Photography</h3>
@@ -26,7 +29,7 @@ export const ViewAllitem = () => {
 </p> */}
         <div className='AllCategoryItem'>
         {
-          photo.length > 0 && photo.map((item) => {
+          serviceData.length > 0 && serviceData.map((item) => {
             return (
             <div key={item.id}>
             <div className='product-image'>

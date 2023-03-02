@@ -4,7 +4,9 @@ import "./IndivisualCard.css";
 export const IndivisualCard = ({id, title, slug,image, value}) => {
   return (
     <div className='single_card'>
-       <img src={image} alt={slug}  />
+      <div className='product-image'>
+        <img src={image} alt={slug}  />
+       </div>
        <p className='title'>{title}</p>
        <p>₹ {value}</p>
        <p>⭐ 4.1 (11k)</p>

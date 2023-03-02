@@ -1,13 +1,46 @@
 import axios from "axios";
 import * as types from "./actionTypes";
 
-// getPhotography
 
+// https://apis.myginee.com/v1/service/bhopal
+// https://apis.myginee.com/v1/service/detail/17
+// https://apis.myginee.com/v1/service/bhopal/photography
+// https://apis.myginee.com/v1/service/bhopal/17
+
+// get All Services
+
+const getServices = (id) => (dispatch) => {
+    dispatch({type: types.GET_SERVICE_REQUEST})
+    
+    return axios.get(`https://apis.myginee.com/v1/service/bhopal`)
+    .then((res) => {
+        dispatch({type: types.GET_SERVICE_SUCCESS, payload: res.data})
+    })
+    .catch((err) => {
+        dispatch({type: types.GET_SERVICE_ERROR, payload: err})
+    })
+}
+
+// getServices-data
+const getServiceData = (id) => (dispatch) => {
+    dispatch({type: types.GET_SERVICE_DATA_REQUEST})
+
+    return axios.get(`https://apis.myginee.com/v1/service/bhopal/${id}`)
+    .then((res) => {
+        dispatch({type: types.GET_SERVICE_DATA_SUCCESS, payload: res.data})
+    })
+    .catch((err) => {
+        dispatch({type: types.GET_SERVICE_DATA_ERROR, payload: err})
+    })
+}
+
+
+ // getPhotography
 const getPhotography = () => (dispatch) => {
      
     dispatch({type: types.GET_PHOTOGRAPHY_REQUEST})
 
-    return axios.get(`https://apis.myginee.com/v1/service/bhopal/photography`)
+    return axios.get(`https://apis.myginee.com/v1/service/bhopal/17`)
     .then((r) => {
         dispatch({type: types.GET_PHOTOGRAPHY_SUCCESS, payload:r.data})
     })
@@ -15,7 +48,6 @@ const getPhotography = () => (dispatch) => {
         dispatch({type: types.GET_PHOTOGRAPHY_ERROR, payload:e})
     })
 }
-
 // data inside photography inside Birthday shoot
 
 const getBirthday = () => (dispatch) => {
@@ -33,4 +65,4 @@ const getBirthday = () => (dispatch) => {
 
 
 
-export {getPhotography, getBirthday}
+export {getServices, getServiceData, getPhotography, getBirthday}

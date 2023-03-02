@@ -37,6 +37,20 @@
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
+.product-image{
+    border: 1px solid red;
+    width:180px;
+    height: 180px;
+    margin: auto;
+    border-radius: 50%;
+}
+.product-image>img{
+    border: 1px solid red;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; 
+}
+
 
 .AllCategoryItem>div>button{
     font-weight: bold;

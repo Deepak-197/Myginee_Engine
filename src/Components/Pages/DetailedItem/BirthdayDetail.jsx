@@ -26,7 +26,7 @@ export const BirthdayDetail = () => {
             return (
               <div >
               <div key={el.id}>
-                <div>
+                <div className='product-image'>
                    <img src={el.image} alt='' />
                 </div>
                 <div>
