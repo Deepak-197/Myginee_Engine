@@ -2,11 +2,11 @@ import * as types from "./actionTypes";
 
 
 const initialState = {
-    isLoading: false,
-     register:[],
-     login:[],
-     isError:false,
-     isAuth:false
+    isAuthLoading: false,
+    register:[],
+    login:[],
+    isAuthError:false,
+    isAuth:false
 }
 
 
@@ -15,22 +15,22 @@ export const reducer = (state=initialState, action) => {
 
     switch(type){
         case types.POST_REGISTER_REQUEST:
-            return {...state, isLoading: true}
+            return {...state, isAuthLoading: true}
         
         case types.POST_REGISTER_SUCCESS:
-            return {...state, isLoading: false, register: payload}
+            return {...state, isAuthLoading: false, register: payload}
 
         case types.POST_REGISTER_ERROR:
-            return {...state, isLoading: false, isError: true}
+            return {...state, isAuthLoading: false, isAuthError: true}
 
         case types.POST_LOGIN_REQUEST:
-            return {...state, isLoading: true}
+            return {...state, isAuthLoading: true}
 
         case types.POST_LOGIN_SUCCESS:
-            return {...state, isLoading: false, login: payload, isAuth: true}
+            return {...state, isAuthLoading: false, login: payload, isAuth: true}
         
         case types.POST_LOGIN_ERROR:
-            return {...state, isLoading: false, isError: true}
+            return {...state, isAuthLoading: false, isAuthError: true}
 
         default:
            return state;
