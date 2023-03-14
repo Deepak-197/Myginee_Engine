@@ -23,7 +23,7 @@ export const Services = () => {
 
   return (
     <div className='services'>
-      <h1>Explorer Our Services</h1>
+      <h2>Explorer Our Services</h2>
         <p>All Home & Corporate Services At One Place</p>
       <div className='services_child'>
         {

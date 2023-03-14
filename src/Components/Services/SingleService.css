@@ -5,6 +5,7 @@
     margin: 10px 10px 5px 5px;
     border-radius: 10px;
     background-color: white;
+   
     /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
     /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; */
     cursor: pointer;
@@ -16,6 +17,7 @@
     /* border: 1px solid blue; */
     width: 40%;
     border-radius: 10px;
+    text-align: center;
    
 }
 

@@ -11,8 +11,8 @@ import { Slideshow } from '../Slideshow/Slideshow';
 export const Homepage = () => {
   return (
     <div>
-        <Header />
         <Navbar />
+        <Header />
         <Section />
         <Slideshow />
         <Services />

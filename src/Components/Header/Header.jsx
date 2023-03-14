@@ -14,7 +14,7 @@ export const Header = () => {
               <div id="save-app">
                   <div style={{ display: "flex"}}>
                     <img src="https://pixsector.com/cache/753f2096/avb4326d4ac628bc1c307.png" />
-                    <p style={{color:"white", fontSize:"16px", padding:"4px", marginTop:"35px"}}>Save $3 with App</p>
+                    <p style={{color:"black", fontSize:"16px", padding:"4px",  marginTop:"35px"}}>Save $3 with App</p>
                   </div>
                 <div className="dropdown" id="save-App">
                   <h4 style={{ textAlign: "left", margin: "25px 0 -10px 20px" }}>
